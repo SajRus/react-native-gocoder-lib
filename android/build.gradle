@@ -1,0 +1,36 @@
+
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 28
+
+
+    defaultConfig {
+        minSdkVersion 21
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+        ndk {
+            abiFilters "armeabi-v7a", "x86"
+        }
+    }
+    lintOptions {
+       warning 'InvalidPackage'
+    }
+}
+repositories {
+    flatDir {
+        dirs 'libs'
+    }
+}
+dependencies {
+    // Include this dependency if Android Studio hasn't already added it
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    // Include the GoCoder SDK library dependency declaration
+    implementation 'com.wowza.gocoder.sdk.android:com.wowza.gocoder.sdk:2.0.0@aar'
+
+    implementation "com.facebook.react:react-native:+"  // From node_modules
+
+}
+  

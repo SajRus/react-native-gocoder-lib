@@ -1,0 +1,30 @@
+{
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/SajRus/react-native-gocoder-lib.git"
+  },
+  "homepage": "https://github.com/SajRus/react-native-gocoder-lib",
+  "author": "Stay Tuned With Web <stay.tuned.ww@gmail.com> (https://github.com/SajRus)",
+  "dependencies": {},
+  "description": "React Native wrapper for the Wowza GoCoder SDK",
+  "devDependencies": {},
+  "keywords": [
+    "react-native",
+    "wowza",
+    "gocoder",
+    "video",
+    "streaming"
+  ],
+  "bugs": "https://github.com/SajRus/react-native-gocoder-lib/issues",
+  "license": "MIT",
+  "main": "BroadcastView.js",
+  "nativePackage": true,
+  "name": "react-native-gocoder-lib",
+  "version": "1.0.7",
+  "contributors": [
+    {
+      "name": "Hugo Nagano",
+      "email": "hugo@medlmobile.com"
+    }
+  ]
+}
